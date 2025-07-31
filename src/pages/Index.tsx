@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Dashboard from "@/components/Dashboard";
+import ScheduleManager from "@/components/ScheduleManager";
 import StudentManager from "@/components/StudentManager";
 import EmailComposer from "@/components/EmailComposer";
 
@@ -16,12 +17,7 @@ const Index = () => {
       case "emails":
         return <EmailComposer />;
       case "schedule":
-        return (
-          <div className="p-6">
-            <h1 className="text-3xl font-bold mb-4">Schedule Management</h1>
-            <p className="text-muted-foreground">Schedule settings will be available in the full version.</p>
-          </div>
-        );
+        return <ScheduleManager />;
       case "settings":
         return (
           <div className="p-6">
